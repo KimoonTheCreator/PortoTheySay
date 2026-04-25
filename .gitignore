@@ -1,0 +1,17 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+
+# Vendor directory (jika pakai vendor mode)
+vendor/
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/
