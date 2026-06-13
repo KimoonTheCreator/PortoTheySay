@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ GANTI: Judul tab browser & SEO title -->
+  <title>Bram Sebastian — Portfolio</title>
+
+  <!-- ✅ GANTI: Deskripsi untuk Google & social media preview -->
+  <meta name="description"
+    content="Portfolio Bram Sebastian — Mahasiswa Sistem dan Teknologi Informasi ITB, Web & Backend Developer yang passionate membangun sistem yang efisien.">
+  <meta property="og:title" content="Bram Sebastian — Portfolio">
+  <meta property="og:description" content="Web & Backend Developer | Mahasiswa ITB">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <!-- ── Noise overlay (dekorasi, jangan diubah) ── -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ── Custom Cursor ── -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ── Scroll Progress Bar ── -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="nav-container">
+
+      <!-- ✅ GANTI: Inisial nama kamu -->
+      <a href="#" class="nav-logo" id="nav-logo">BS.</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <!-- ✅ GANTI: Email aktif kamu -->
+      <a href="mailto:your.email@gmail.com" class="nav-cta" id="nav-hire-me">Hire Me ↗</a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+      <ul class="nav-mobile-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- ✅ GANTI: Sapaan pembuka -->
+      <p class="hero-greeting">Halo, Saya</p>
+
+      <!-- ✅ GANTI: Nama lengkap / nama panggilan kamu (HURUF KAPITAL) -->
+      <h1 class="hero-name" id="hero-name">BRAM SEBASTIAN</h1>
+
+      <div class="hero-tagline">
+        <div class="hero-tagline-line" aria-hidden="true"></div>
+        <!-- ✅ GANTI: Profesi / keahlian utama -->
+        <span class="hero-role" id="hero-role">Web &amp; Backend Developer</span>
+      </div>
+
+      <!-- ✅ GANTI: Kalimat pembuka singkat tentang dirimu -->
+      <p class="hero-sub">
+        Mahasiswa Sistem dan Teknologi Informasi ITB yang passionate dalam membangun
+        sistem yang scalable, clean, dan berdampak nyata.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">Lihat Karya Saya ↓</a>
+        <a href="#contact" class="btn btn-ghost" id="hero-cta-contact">Hubungi Saya</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       ABOUT SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+
+      <div class="section-label fade-in">// 01. About</div>
+
+      <div class="about-grid">
+
+        <!-- FOTO PROFIL -->
+        <div class="about-photo fade-in" data-delay="0">
+          <div class="photo-frame">
+            <!-- ✅ GANTI: Ganti SVG ini dengan tag <img src="/img/profile.jpg" alt="...">
+                          setelah upload foto profilmu ke folder public/img/ -->
+            <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder foto profil">
+              <!-- Kepala -->
+              <circle cx="100" cy="75" r="42" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1" />
+              <!-- Badan -->
+              <path d="M20 200 Q20 145 100 145 Q180 145 180 200 Z" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1" />
+              <!-- Detail wajah - mata -->
+              <circle cx="85" cy="72" r="5" fill="#555" />
+              <circle cx="115" cy="72" r="5" fill="#555" />
+              <!-- Senyum -->
+              <path d="M85 92 Q100 104 115 92" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round" />
+              <!-- Inisial -->
+              <text x="100" y="180" text-anchor="middle" font-family="'Syne', sans-serif" font-size="14"
+                font-weight="700" fill="#444" letter-spacing="3">BS</text>
+            </svg>
+          </div>
+          <div class="photo-decoration" aria-hidden="true"></div>
+        </div>
+
+        <!-- BIO -->
+        <div class="about-content fade-in" data-delay="100">
+          <h2 class="section-title">Tentang Saya</h2>
+
+          <!-- ✅ GANTI: Paragraf 1 — ceritakan dirimu secara umum -->
+          <p class="about-bio">
+            Saya adalah mahasiswa Sistem dan Teknologi Informasi di ITB yang memiliki
+            ketertarikan mendalam dalam pengembangan web dan backend. Saya
+            senang membangun sistem yang efisien dan dapat membantu manusia.
+          </p>
+
+          <!-- ✅ GANTI: Paragraf 2 — ceritakan passion, aktivitas, atau goals kamu -->
+          <p class="about-bio">
+            Di luar coding, saya aktif berpartisipasi dalam hackathon dan
+            berkontribusi pada berbagai proyek. Saya percaya bahwa teknologi
+            terbaik lahir dari kolaborasi, kreativitas, dan semangat untuk
+            terus belajar.
+          </p>
+
+          <div class="about-facts">
+            <!-- ✅ GANTI: Fakta-fakta tentang dirimu -->
+            <div class="fact">
+              <span class="fact-icon" aria-hidden="true">📍</span>
+              <span>Bandung, Indonesia</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon" aria-hidden="true">🎓</span>
+              <span>Sistem dan Teknologi Informasi, ITB</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon" aria-hidden="true">📅</span>
+              <span>Angkatan 2024</span>
+            </div>
+            <div class="fact">
+              <span class="fact-icon" aria-hidden="true">💼</span>
+              <span>Open to Opportunities</span>
+            </div>
+          </div>
+
+          <!-- ✅ GANTI: Arahkan href ke file CV kamu (upload ke public/files/cv.pdf) -->
+          <a href="#" class="btn btn-outline" id="about-download-cv">Download CV ↓</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       SKILLS SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+
+      <div class="section-label fade-in">// 02. Skills</div>
+      <h2 class="section-title text-center fade-in">Teknologi yang Saya Gunakan</h2>
+
+      <div class="skills-grid">
+
+        <!-- ✅ GANTI: Daftar bahasa pemrograman yang kamu kuasai -->
+        <div class="skill-category fade-in" data-delay="0">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Go</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>JavaScript</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>C++</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Java</div>
+          </div>
+        </div>
+
+        <!-- ✅ GANTI: Framework / library yang kamu pakai -->
+        <div class="skill-category fade-in" data-delay="100">
+          <h3 class="skill-cat-title">Frameworks</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Gin (Go)</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>React</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Next.js</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Express.js</div>
+          </div>
+        </div>
+
+        <!-- ✅ GANTI: Tools / database / lainnya -->
+        <div class="skill-category fade-in" data-delay="200">
+          <h3 class="skill-cat-title">Tools &amp; Others</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Git &amp; GitHub</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Docker</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>PostgreSQL</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>Linux</div>
+            <div class="skill-item"><span class="skill-dot" aria-hidden="true"></span>REST API</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+
+      <div class="section-label fade-in">// 03. Projects</div>
+      <h2 class="section-title fade-in">Karya yang Pernah Saya Buat</h2>
+
+      <div class="projects-grid">
+
+        <!-- ── PROJECT 1 (NYATA) ── -->
+        <article class="project-card fade-in" data-delay="0">
+          <div class="project-number" aria-hidden="true">01</div>
+          <div class="project-content">
+            <!-- ✅ GANTI: Nama project -->
+            <h3 class="project-title">Overcooked Clone</h3>
+            <!-- ✅ GANTI: Deskripsi project (2-3 kalimat) -->
+            <p class="project-desc">
+              Clone game Overcooked berbasis OOP — game 2 player real-time
+              di mana dua pemain bekerja sama memasak dan melayani pesanan
+              dalam waktu terbatas. Dibangun dengan prinsip
+              Object-Oriented Programming yang solid dan arsitektur yang bersih.
+            </p>
+            <!-- ✅ GANTI: Teknologi yang dipakai -->
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">OOP</span>
+              <span class="tag">2-Player</span>
+              <span class="tag">Game Dev</span>
+            </div>
+            <div class="project-links">
+              <!-- ✅ GANTI: Link GitHub project -->
+              <a href="https://github.com/KimoonTheCreator/Tugas-Besar-OOP-Semester-3-2025-2026.git" target="_blank" rel="noopener" class="project-link" id="proj1-github">GitHub ↗</a>
+              <!-- Hapus baris bawah jika tidak ada demo -->
+              <!-- <a href="#" target="_blank" rel="noopener" class="project-link">Demo ↗</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 2 (PLACEHOLDER) ── -->
+        <article class="project-card fade-in" data-delay="120">
+          <div class="project-number" aria-hidden="true">02</div>
+          <div class="project-content">
+            <!-- ✅ GANTI: Nama project kedua -->
+            <h3 class="project-title">Project Placeholder</h3>
+            <!-- ✅ GANTI: Deskripsi project kedua -->
+            <p class="project-desc">
+              Deskripsi project kedua akan ditambahkan di sini. Ceritakan
+              apa yang dibangun, masalah apa yang diselesaikan, dan
+              bagaimana solusimu memberi dampak nyata.
+            </p>
+            <!-- ✅ GANTI: Stack teknologi -->
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <!-- ✅ GANTI: Link GitHub & demo -->
+              <a href="#" class="project-link" id="proj2-github">GitHub ↗</a>
+              <a href="#" class="project-link" id="proj2-demo">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── PROJECT 3 (PLACEHOLDER) ── -->
+        <article class="project-card fade-in" data-delay="240">
+          <div class="project-number" aria-hidden="true">03</div>
+          <div class="project-content">
+            <!-- ✅ GANTI: Nama project ketiga -->
+            <h3 class="project-title">Project Placeholder</h3>
+            <!-- ✅ GANTI: Deskripsi project ketiga -->
+            <p class="project-desc">
+              Deskripsi project ketiga akan ditambahkan di sini. Ceritakan
+              apa yang dibangun, masalah apa yang diselesaikan, dan
+              teknologi apa yang digunakan dalam pengembangannya.
+            </p>
+            <!-- ✅ GANTI: Stack teknologi -->
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="project-links">
+              <!-- ✅ GANTI: Link GitHub & demo -->
+              <a href="#" class="project-link" id="proj3-github">GitHub ↗</a>
+              <a href="#" class="project-link" id="proj3-demo">Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       EXPERIENCE / TIMELINE SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+
+      <div class="section-label fade-in">// 04. Experience</div>
+      <h2 class="section-title fade-in">Perjalanan &amp; Pencapaian</h2>
+
+      <div class="timeline">
+
+        <!-- ── TIMELINE ITEM 1 ── -->
+        <div class="timeline-item fade-in" data-delay="0">
+          <div class="timeline-left">
+            <!-- ✅ GANTI: Tahun / periode -->
+            <span class="timeline-year">2026</span>
+          </div>
+          <div class="timeline-middle" aria-hidden="true">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div class="timeline-right">
+            <!-- ✅ GANTI: Label badge (bisa "Backend Dev", "Juara 1", dll) -->
+            <div class="timeline-badge">Backend Developer</div>
+            <!-- ✅ GANTI: Judul / posisi -->
+            <h3 class="timeline-title">Backend Handler — OSKM ITB 2026</h3>
+            <!-- ✅ GANTI: Deskripsi singkat pencapaian -->
+            <p class="timeline-desc">
+              Bertanggung jawab mengelola dan mengembangkan sistem backend untuk
+              Orientasi Studi Keluarga Mahasiswa (OSKM) ITB 2026. Membangun
+              RESTful API dan infrastruktur server untuk mendukung seluruh kegiatan
+              penyambutan mahasiswa baru ITB.
+            </p>
+            <!-- ✅ GANTI: Tag yang relevan -->
+            <div class="timeline-tags">
+              <span class="tag">Backend</span>
+              <span class="tag">Go</span>
+              <span class="tag">REST API</span>
+              <span class="tag">ITB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── TIMELINE ITEM 2 ── -->
+        <div class="timeline-item fade-in" data-delay="150">
+          <div class="timeline-left">
+            <!-- ✅ GANTI: Tahun / periode -->
+            <span class="timeline-year">2025</span>
+          </div>
+          <div class="timeline-middle" aria-hidden="true">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+          </div>
+          <div class="timeline-right">
+            <!-- ✅ GANTI: Label badge -->
+            <div class="timeline-badge">🏆 Juara 2</div>
+            <!-- ✅ GANTI: Nama kompetisi / event -->
+            <h3 class="timeline-title">Find IT! Hackathon — Runner-Up</h3>
+            <!-- ✅ GANTI: Cerita singkat pencapaian -->
+            <p class="timeline-desc">
+              Meraih posisi Runner-Up pada kompetisi Find IT! Hackathon yang
+              diselenggarakan oleh ITS Surabaya. Berhasil membangun solusi inovatif
+              dalam waktu terbatas bersama tim, melewati tahap seleksi ketat dari
+              ratusan peserta.
+            </p>
+            <!-- ✅ GANTI: Tag relevan -->
+            <div class="timeline-tags">
+              <span class="tag">Hackathon</span>
+              <span class="tag">Competitive</span>
+              <span class="tag">Team</span>
+              <span class="tag">ITS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ TAMBAH item experience baru di sini dengan template yang sama -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+
+      <div class="section-label fade-in">// 05. Contact</div>
+      <div class="contact-header fade-in">
+        <!-- ✅ GANTI: Judul & subjudul contact -->
+        <h2 class="section-title">Mari Bekerja Sama!</h2>
+        <p class="contact-sub">Punya ide project menarik? Let's talk.</p>
+      </div>
+
+      <div class="contact-grid fade-in">
+
+        <!-- Info Kontak -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <!-- ✅ GANTI: Email aktif kamu -->
+            <a href="mailto:pangaribuanbram@gmail.com" class="contact-value" id="contact-email">pangaribuanbram@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <!-- ✅ GANTI: Link GitHub kamu -->
+            <a href="https://github.com/KimoonTheCreator" target="_blank" rel="noopener" class="contact-value"
+              id="contact-github">@KimoonTheCreator</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <!-- ✅ GANTI: Link LinkedIn kamu -->
+            <a href="https://linkedin.com/in/bram-pangrib-800200324" target="_blank" rel="noopener" class="contact-value"
+              id="contact-linkedin">Bram Pangrib</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <!-- ✅ GANTI: Akun Instagram kamu -->
+            <a href="https://instagram.com/bram_pangrib" target="_blank" rel="noopener" class="contact-value"
+              id="contact-instagram">@bram_pangrib</a>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <!-- ✅ GANTI action form: ganti "#" dengan endpoint backend Go atau Formspree URL -->
+        <!-- Contoh Formspree: action="https://formspree.io/f/YOUR_FORM_ID" method="POST" -->
+        <form class="contact-form" id="contact-form" action="#" novalidate>
+          <div class="form-group">
+            <label for="form-name" class="sr-only">Nama Lengkap</label>
+            <input type="text" id="form-name" name="name" placeholder="Nama Lengkap" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="sr-only">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="Email" required class="form-input">
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="sr-only">Pesan</label>
+            <textarea id="form-message" name="message" placeholder="Pesan / Keperluan" rows="5" required
+              class="form-input form-textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit">Kirim Pesan →</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <!-- ✅ GANTI: Namamu & tahun -->
+        <p class="footer-copy">© 2026 Bram Sebastian &nbsp;·&nbsp; Dibuat dengan menggunakan Go &amp; Vanilla JS</p>
+        <a href="#" class="footer-top" id="back-to-top" aria-label="Kembali ke atas">↑ Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

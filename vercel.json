@@ -1,0 +1,8 @@
+{
+  "outputDirectory": "public",
+  "buildCommand": "",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
